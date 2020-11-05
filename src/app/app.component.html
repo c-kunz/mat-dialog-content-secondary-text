@@ -1,0 +1,10 @@
+<!-- Example dialog from https://material.io/components/dialogs#anatomy -->
+<ng-template #dialogTemplate>
+  <span mat-dialog-title>Reset settings?</span>
+  <mat-dialog-content>
+    This will reset this device to its default factory settings.
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button color="primary" *ngFor="let action of actions">{{ action | uppercase }}</button>
+  </mat-dialog-actions>
+</ng-template>
